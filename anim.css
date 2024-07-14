@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     color: white;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
@@ -17,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 68px;
     position: relative;
 }
@@ -116,6 +117,5 @@ body {
         width: 100%;
     }
 }
-
 
 

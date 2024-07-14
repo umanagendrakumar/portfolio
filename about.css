@@ -27,18 +27,19 @@ body {
 }
 
 .section1 {
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
     padding: 2rem 10%;
     min-height: 100vh;
+    position: relative;
 }
 
 .about {
     text-align: right;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding: 2rem;
     display: none;
     max-width: 600px;
@@ -102,26 +103,26 @@ body {
 
 .about .connect a:nth-child(1) {
     background-color: #316FF6;
-    animation: click 2s infinite;
+    animation: media 2s infinite;
 }
 
 .about .connect a:nth-child(2) {
     background-color: #E1306C;
-    animation: click 2s 0.5s infinite;
+    animation: media 2s 0.5s infinite;
 
 }
 
 .about .connect a:nth-child(3) {
     background-color: #0077B5;
-    animation: click 2s 1s infinite;
+    animation: media 2s 1s infinite;
 }
 
 .about .connect a:nth-child(4) {
     background-color: rgba(66, 66, 66, 0.962);
-    animation: click 2s 1.5s infinite;
+    animation: media 2s 1.5s infinite;
 }
 
-@keyframes click {
+@keyframes media {
     0%{
         transform: scale(1);
     }
@@ -175,20 +176,25 @@ body {
     color: var(--main);
 }
 
+.section1 .img-wrapper {
+    border: 1px solid red;
+    padding: 10%;
+}
 .image {
     border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
 }
 
-.image img {
+.image .pic {
     width: 400px;
     height: 400px;
     display: block;
     border-radius: 50%;
     filter: grayscale() blur(3px);
+    
 }
-
 @media screen and (max-width:1080px){
     .section1 {
         flex-direction: column-reverse;
@@ -200,13 +206,13 @@ body {
     
 }
 @media screen and (max-width:800px){
-    .image img {
+    .image > img {
         width: 350px;
         height: 350px;
     }
 }
 @media screen and (max-width:584px){
-    .image img {
+    .image > img {
         width: 300px;
         height: 300px;
     }
@@ -234,3 +240,22 @@ body {
     } */
 }
 
+
+.clickme {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: click 6s ease-out;
+    /* border: 1px solid white; */
+    /* border-radius: 50%; */
+}
+
+@keyframes click {
+    40% {
+        transform: translate(-150px, -180px);
+    }
+    41% {
+        transform: translate(0, 0);
+    }
+
+}
