@@ -8,5 +8,15 @@ menu.addEventListener('click', function() {
 });
 close.addEventListener('click', function() {
     sidebar.style.display = "none";
-    menu.style.display = "block"
+    menu.style.display = "block";
 });
+
+
+const about = document.querySelector('.about');
+const image = document.querySelector('.image');
+const img = document.querySelector('.pic')
+
+image.addEventListener('click', () => {
+    img.style.filter = "none";
+    about.style.display = "block";  
+})

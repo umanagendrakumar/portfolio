@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    color: white
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: black;
+}
+
+:root {
+    --sub: rgb(0, 0, 0, );
+    --main: #ffffff;
+}
+
+.sec {
+    min-width: 100vh;
+    /* border: 2px solid white; */
+}
+
+.section1 {
+    border: 2px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 10%;
+    min-height: 100vh;
+}
+
+.about {
+    text-align: right;
+    border: 2px solid white;
+    padding: 2rem;
+    display: none;
+    max-width: 600px;
+
+}
+
+.about .name {
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 40px;
+
+}
+
+.about .name span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(5, 176, 5);
+    /* text-decoration: underline; */
+}
+
+.about .role {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.about .role span {
+    color: rgb(184, 121, 6);
+    font-weight: 700;
+}
+
+.about .extra {
+    font-weight: 500;
+    line-height: 25px;
+}
+.about .extra a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px dotted white;
+
+}
+
+.about .connect {
+    /* border: 2px solid red; */
+    margin: 2rem 0;
+
+}
+
+.about .connect a {
+    border: none;
+    text-decoration: none;
+    margin-inline-end: 1.5rem;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-block-start: 0.4rem;
+    color: white;
+}
+
+.about .connect a:nth-child(1) {
+    background-color: #316FF6;
+    animation: click 2s infinite;
+}
+
+.about .connect a:nth-child(2) {
+    background-color: #E1306C;
+    animation: click 2s 0.5s infinite;
+
+}
+
+.about .connect a:nth-child(3) {
+    background-color: #0077B5;
+    animation: click 2s 1s infinite;
+}
+
+.about .connect a:nth-child(4) {
+    background-color: rgba(66, 66, 66, 0.962);
+    animation: click 2s 1.5s infinite;
+}
+
+@keyframes click {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+        /* border: 2px solid white; */
+    }
+
+}
+
+.about .buttons button {
+    padding: 1rem 3rem;
+    margin-inline-end: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
+.about .buttons button:active {
+    transform: scale(0.97);
+}
+
+.about .buttons button:nth-child(1) {
+
+    color: white;
+    border-radius: 15px;
+    border: 2px solid greenyellow;
+    background: black;
+}
+
+
+.about .buttons button:nth-child(1):hover {
+
+    background: linear-gradient(90deg, rgb(9, 213, 9), rgba(255, 255, 0, 0.928));
+
+
+}
+
+.about .buttons button:nth-child(2) {
+
+    color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 200, 255);
+    background: linear-gradient(90deg, rgb(0, 255, 149), rgb(0, 81, 255));
+
+}
+
+.about .buttons button:nth-child(2):hover {
+    background: black;
+    color: var(--main);
+}
+
+.image {
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border-radius: 50%;
+    filter: grayscale() blur(3px);
+}
+
+@media screen and (max-width:1080px){
+    .section1 {
+        flex-direction: column-reverse;
+    }
+    .section1 .about {
+        border: 2px solid white;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .image img {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:584px){
+    .image img {
+        width: 300px;
+        height: 300px;
+    }
+    .about .name {
+        font-size: 1.6rem;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .about .name span {
+        font-size: 2rem;
+        line-height: 20px;
+
+    }
+    .about .role {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        line-height: 20px;
+    }
+    
+    /* .about .role span {
+        color: rgb(184, 121, 6);
+        font-weight: 700;
+    } */
+}
+

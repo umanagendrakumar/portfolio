@@ -1,47 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="anim.css">
+    <link rel="stylesheet" href="about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Navbar</title>
 
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-           <a href="#">K<span>unK</span></a>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="menu" >
-                <img src="svg/menu.svg" alt="">
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">K<span>unK</span></a>
             </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu">
+                    <img src="svg/menu.svg" alt="">
+                </div>
 
-        </div>
-    </nav>
-    <nav class="sidebar">
-        <div class="side-links">
-            <div class="close" >
-                <img src="svg/close.svg" alt="">
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-<script src="anim.js">
+        </nav>
+        <nav class="sidebar">
+            <div class="side-links">
+                <div class="close">
+                    <img src="svg/close.svg" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="sec section1">
+            <div class="about">
+                <div class="name">Hii, It's <span>Uma Nagendra Kumar.</span></div>
+                <div class="role">I'm a <span>Front-End</span> focused <span>Web Developer.</span></div>
+                <div class="extra">
+                    I'm a Prefinal Year Student at <a href="https://www.nagarjunauniversity-ac.in/">Acharya Nagarjuna
+                        university</a> in Btech COMPUTER SCIENCE & ENGINEERING.
+                    <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quidem id ut consequatur
+                    ea inventore magni distinctio autem nihil atque dolorum saepe officiis sapiente impedit, temporibus
+                    unde, hic molestiae deleniti. -->
+                </div>
+                
+                <div class="connect">
+                    <a href="https://www.facebook.com/lazyKUNK/">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/lazy__monarch______">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kunk/">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="https://github.com/umanagendrakumar">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+                <div class="buttons">
+                    <button>Hire</button>
+                    <button>Contact</button>
+                </div>
+            </div>
+            <div class="image">
+                <img class="pic" src="photo/photo.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="anim.js">
 
-</script>
+    </script>
 </body>
+
 </html>
